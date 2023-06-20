@@ -126,7 +126,8 @@ body {
 }
 .window__body {
   flex: 1;
-  padding: 12px 11px 11px 11px;
+  overflow: hidden;
+  position: relative;
 }
 .window__body-icon {
   display: block;
@@ -138,6 +139,16 @@ body {
 .window__body-text {
   padding: 8px 0;
 }
+
+.window__body img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 .window__footer {
   justify-content: center;
   padding: 0 11px 12px 11px;
