@@ -27,23 +27,25 @@ button {
 }
 
 body {
-  background-color: #188080;
+  background-color: #dbd1e6;
+background-image: url("https://transparenttextures.com/patterns/brushed-alum-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: grid;
   height: 100vh;
   overflow: hidden;
 }
 
 .window {
-  background-color: #c0c0c0;
-  box-shadow: -1px -1px 0 #000000 inset, 1px 1px 0 #dfdfdf inset, -2px -2px 0 #808080 inset, 2px 2px 0 #ffffff inset;
+  background-color: rgba(192, 192, 192, 0);
+  box-shadow: -1px -1px 0 #000000 inset, 1px 1px 0 #dfdfdf inset, -2px -2px 0 rgba(192, 192, 192, 0) inset, 2px 2px 0 #ffffff inset;
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: calc(50% - 60px);
+  top: calc(50% - 260px);
   left: calc(50% - 148px);
   padding: 3px;
-  min-width: 296px;
-  min-height: 119px;
+  min-width: 300px;
+  min-height: 400px;
   white-space: nowrap;
   user-select: none;
   -moz-user-select: none;
@@ -64,13 +66,13 @@ body {
   box-shadow: 5px 4px #000000, 6px 4px #000000, 6px 5px #000000, 7px 5px #000000, 7px 6px #000000, 8px 6px #000000, 9px 6px #000000, 10px 6px #000000, 10px 5px #000000, 11px 5px #000000, 11px 4px #000000, 12px 4px #000000, 8px 7px #000000, 9px 7px #000000, 7px 8px #000000, 8px 8px #000000, 9px 8px #000000, 10px 8px #000000, 6px 9px #000000, 7px 9px #000000, 11px 9px #000000, 10px 9px #000000, 5px 10px #000000, 6px 10px #000000, 12px 10px #000000, 11px 10px #000000;
 }
 .window__sprite--close-disabled {
-  box-shadow: 5px 4px #808080, 6px 4px #808080, 6px 5px #808080, 7px 5px #808080, 7px 6px #808080, 8px 6px #808080, 9px 6px #808080, 10px 6px #808080, 10px 5px #808080, 11px 5px #808080, 11px 4px #808080, 12px 4px #808080, 8px 7px #808080, 9px 7px #808080, 7px 8px #808080, 8px 8px #808080, 9px 8px #808080, 10px 8px #808080, 6px 9px #808080, 7px 9px #808080, 11px 9px #808080, 10px 9px #808080, 5px 10px #808080, 6px 10px #808080, 12px 10px #808080, 11px 10px #808080, 12px 5px #ffffff, 13px 5px #ffffff, 11px 6px #ffffff, 12px 6px #ffffff, 10px 7px #ffffff, 11px 7px #ffffff, 8px 9px #ffffff, 9px 9px #ffffff, 7px 10px #ffffff, 8px 10px #ffffff, 6px 11px #ffffff, 7px 11px #ffffff, 12px 11px #ffffff, 13px 11px #ffffff;
+  box-shadow: 5px 4px rgba(192, 192, 192, 0), 6px 4px rgba(192, 192, 192, 0), 6px 5px rgba(192, 192, 192, 0), 7px 5px rgba(192, 192, 192, 0), 7px 6px rgba(192, 192, 192, 0), 8px 6px rgba(192, 192, 192, 0), 9px 6px rgba(192, 192, 192, 0), 10px 6px rgba(192, 192, 192, 0), 10px 5px rgba(192, 192, 192, 0), 11px 5px rgba(192, 192, 192, 0), 11px 4px rgba(192, 192, 192, 0), 12px 4px rgba(192, 192, 192, 0), 8px 7px rgba(192, 192, 192, 0), 9px 7px rgba(192, 192, 192, 0), 7px 8px rgba(192, 192, 192, 0), 8px 8px rgba(192, 192, 192, 0), 9px 8px rgba(192, 192, 192, 0), 10px 8px rgba(192, 192, 192, 0), 6px 9px rgba(192, 192, 192, 0), 7px 9px rgba(192, 192, 192, 0), 11px 9px rgba(192, 192, 192, 0), 10px 9px rgba(192, 192, 192, 0), 5px 10px rgba(192, 192, 192, 0), 6px 10px rgba(192, 192, 192, 0), 12px 10px rgba(192, 192, 192, 0), 11px 10px rgba(192, 192, 192, 0), 12px 5px #ffffff, 13px 5px #ffffff, 11px 6px #ffffff, 12px 6px #ffffff, 10px 7px #ffffff, 11px 7px #ffffff, 8px 9px #ffffff, 9px 9px #ffffff, 7px 10px #ffffff, 8px 10px #ffffff, 6px 11px #ffffff, 7px 11px #ffffff, 12px 11px #ffffff, 13px 11px #ffffff;
 }
 .window__button {
-  background-color: #c0c0c0;
+  background-color: rgba(192, 192, 192, 0);
   border-radius: 0;
-  box-shadow: 1px 1px 0 #ffffff inset, -1px -1px 0 #808080 inset, 2px 2px 0 #dfdfdf inset, 1px 0 0 #000000, 0 1px 0 #000000, 1px 1px 0 #000000;
-  letter-spacing: 1px;
+  
+  letter-spacing: 5px;
   outline: 0;
   position: relative;
   min-width: 15px;
@@ -80,17 +82,17 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 .window__button:not(:disabled):active {
-  box-shadow: 1px 1px 0 #000000 inset, -1px -1px 0 #c0c0c0 inset, 2px 2px 0 #808080 inset, 1px 0 0 #ffffff, 0 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  
   padding: 1px 0 0 1px;
 }
 .window__button--lg {
-  box-shadow: -1px -1px 0 #000000 inset, 1px 1px 0 #ffffff inset, -2px -2px 0 #808080 inset;
+  box-shadow: -1px -1px 0 #000000 inset, 1px 1px 0 #ffffff inset, -2px -2px 0 rgba(192, 192, 192, 0) inset;
   padding: 1px 0 0 1px;
   min-width: 75px;
   height: 23px;
 }
 .window__button--lg:not(:disabled):active {
-  box-shadow: 0 0 0 1px #000000 inset, 0 0 0 2px #808080 inset;
+  box-shadow: 0 0 0 1px #000000 inset, 0 0 0 2px rgba(192, 192, 192, 0) inset;
   padding: 3px 0 0 3px;
 }
 .window__button:not(:disabled):active .window__sprite {
@@ -100,19 +102,19 @@ body {
   display: flex;
 }
 .window__header {
-  background-color: #808080;
-  color: #c0c0c0;
+  background-color: rgba(192, 192, 192, 0);
+  color: rgba(192, 192, 192, 0);
   justify-content: space-between;
   padding: 2px 3px;
   width: 100%;
   height: 18px;
 }
 .window--active .window__header {
-  background-color: #120180;
+  background-color: rgba(192, 192, 192, 0);
   color: #ffffff;
 }
 .window--active .window__button--lg {
-  box-shadow: 0 0 0 1px #000000 inset, -2px -2px 0 #000000 inset, 2px 2px 0 #ffffff inset, -3px -3px 0 #808080 inset, 3px 3px 0 #dfdfdf inset;
+  box-shadow: 0 0 0 1px #000000 inset, -2px -2px 0 #000000 inset, 2px 2px 0 #ffffff inset, -3px -3px 0 rgba(192, 192, 192, 0) inset, 3px 3px 0 #dfdfdf inset;
 }
 .window--active .window__button--lg:before {
   background: linear-gradient(90deg, transparent 50%, #000000 50%) 0 0/2px 1px repeat-x, linear-gradient(90deg, transparent 50%, #000000 50%) 0 100%/2px 1px repeat-x, linear-gradient(transparent 50%, #000000 50%) 0 0/1px 2px repeat-y, linear-gradient(transparent 50%, #000000 50%) 100% 0/1px 2px repeat-y;
@@ -163,4 +165,22 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
+}
+
+#arrow-icon {
+  width: 80px;
+  height: 70px;
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("img/arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: arrow-fade 1.5s ease-in-out 8s forwards;
+}
+
+@keyframes arrow-fade {
+  from { opacity: 0; bottom: -200px; }
+  to { opacity: 1; bottom: 80px; }
 }

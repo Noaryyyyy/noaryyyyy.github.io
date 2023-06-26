@@ -8,36 +8,18 @@
 </head>
 <body>
 	
-	<!-- 弹窗1 -->
-<!-- partial:index.partial.html -->
-    <div id="error-0" class="window window--active" role="alertdialog" aria-modal="true" aria-labelledby="error-label-0" aria-describedby="error-desc-0" data-window hidden>
-        <div class="window__header" data-header>
-            <div id="error-label-0" class="window__title" data-label>Error</div>
-            <button class="window__button" type="button" disabled>
-                <span class="window__sprite window__sprite--close-disabled"></span>
-                <span class="window__sr">Close</span>
-            </button>
-        </div>
-        <div class="window__body">
-            <img class="window__body-icon" alt="Error icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCu3gQpbKobdc2JgKQLQyJog1Ib7cNNoKRww&usqp=CAU" width="100%" height="100%">
-            <p id="error-desc-0" class="window__body-text" data-desc></p>
-        </div>
-        <div class="window__footer">
-            <button class="window__button window__button--lg" type="button" data-ok>OK</button>
-        </div>
-    </div>
-	
     <!-- partial:index.partial.html -->
     <div id="error-0" class="window window--active" role="alertdialog" aria-modal="true" aria-labelledby="error-label-0" aria-describedby="error-desc-0" data-window hidden>
         <div class="window__header" data-header>
-            <div id="error-label-0" class="window__title" data-label>Error</div>
+            <div id="error-label-0" class="window__title" data-label> </div>
             <button class="window__button" type="button" disabled>
                 <span class="window__sprite window__sprite--close-disabled"></span>
                 <span class="window__sr">Close</span>
             </button>
         </div>
         <div class="window__body">
-            <img class="window__body-icon" alt="Error icon" src="https://5b0988e595225.cdn.sohucs.com/images/20181107/3d4a1c8e8df041cfaa933ccc52461443.png" width="100%" height="100%">
+            <img class="window__body-icon" alt="Error icon" 
+				 src="img/popup.png" width="100%" height="100%" alt=""/>
             <p id="error-desc-0" class="window__body-text" data-desc></p>
         </div>
         <div class="window__footer">
@@ -47,5 +29,9 @@
     <!-- partial -->
     <script src='howler.min.js'></script>
     <script src="./script.js"></script>
+	
+	<div id="arrow-icon"></div>
+
+	
 </body>
 </html>
