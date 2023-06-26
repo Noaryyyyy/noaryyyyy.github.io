@@ -27,8 +27,11 @@ button {
 }
 
 body {
-  background-color: #dbd1e6;
-background-image: url("https://transparenttextures.com/patterns/brushed-alum-dark.png");
+	 background-image: url("img/bg.jpg");
+	background-size: cover;
+	
+  /*background-color: #dbd1e6;
+background-image: url("https://transparenttextures.com/patterns/brushed-alum-dark.png");*/
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: grid;
   height: 100vh;
